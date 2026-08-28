@@ -6,13 +6,13 @@
 /*   By: root <mhinojos@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 12:02:40 by root              #+#    #+#             */
-/*   Updated: 2026/08/28 12:05:21 by root             ###   ########.fr       */
+/*   Updated: 2026/08/28 12:36:13 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_ft(int *nbr)
+void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }

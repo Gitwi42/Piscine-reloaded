@@ -6,18 +6,18 @@
 /*   By: root <mhinojos@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 19:28:35 by root              #+#    #+#             */
-/*   Updated: 2026/08/28 11:23:03 by root             ###   ########.fr       */
+/*   Updated: 2026/08/28 12:36:10 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void ft_print_alphabet(void)
+void	ft_print_alphabet(void)
 {
 	char	alph;
 

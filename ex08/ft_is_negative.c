@@ -6,7 +6,7 @@
 /*   By: root <mhinojos@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 11:48:20 by root              #+#    #+#             */
-/*   Updated: 2026/08/28 12:49:38 by root             ###   ########.fr       */
+/*   Updated: 2026/08/28 14:57:45 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@
 void	ft_is_negative(int n)
 {
 	if (n >= 0)
-		ft_putchar("P");
+		ft_putchar('P');
 	else
-		ft_putchar("N");
+		ft_putchar('N');
 }
 /*int	main(void)
 {

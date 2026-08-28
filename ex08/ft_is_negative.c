@@ -6,18 +6,23 @@
 /*   By: root <mhinojos@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 11:48:20 by root              #+#    #+#             */
-/*   Updated: 2026/08/28 12:36:12 by root             ###   ########.fr       */
+/*   Updated: 2026/08/28 12:49:38 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
+/*void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}*/
+
 void	ft_is_negative(int n)
 {
 	if (n >= 0)
-		write(1, "P", 1);
+		ft_putchar("P");
 	else
-		write(1, "N", 1);
+		ft_putchar("N");
 }
 /*int	main(void)
 {

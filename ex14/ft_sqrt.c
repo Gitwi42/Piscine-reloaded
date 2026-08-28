@@ -6,11 +6,11 @@
 /*   By: root <mhinojos@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 14:01:35 by root              #+#    #+#             */
-/*   Updated: 2026/08/28 14:29:04 by root             ###   ########.fr       */
+/*   Updated: 2026/08/28 14:30:58 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 
 int	ft_sqrt(int nb)
 {
@@ -28,11 +28,11 @@ int	ft_sqrt(int nb)
 	return (0);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	printf("%d\n", ft_sqrt(16));
 	printf("%d\n", ft_sqrt(25));
 	printf("%d\n", ft_sqrt(49));
 	printf("%d\n", ft_sqrt(50));
 	printf("%d\n", ft_sqrt(100));
-}
+}*/

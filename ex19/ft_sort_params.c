@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_params.c                                  :+:      :+:    :+:   */
+/*   ft_sort_params.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: root <mhinojos@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/29 01:06:06 by root              #+#    #+#             */
-/*   Updated: 2026/08/29 13:20:17 by root             ###   ########.fr       */
+/*   Created: 2026/08/29 12:01:16 by root              #+#    #+#             */
+/*   Updated: 2026/08/29 13:20:58 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,19 +17,46 @@
 	write(1, &c, 1);
 }*/
 
+void	ft_putstr(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+		ft_putchar(str[i++]);
+}
+
+void	ft_swap(char **str1, char **str2)
+{
+	char	*temp;
+
+	temp = *str1;
+	*str1 = *str2;
+	*str2 = temp;
+}
+
 int	main(int argc, char **argv)
 {
 	int	i;
-	int	p;
+	int	j;
+	int	k;
 
-	p = 1;
-	while (p <= argc - 1)
+	j = 1;
+	while (j != argc - 1)
 	{
-		i = 0;
-		while (argv[p][i])
-			ft_putchar(argv[p][i++]);
-		p++;
+		k = j + 1;
+		while (k != argc)
+		{
+			i = 0;
+			while (argv[j][i] == argv[k][i] && (argv[j][i] || argv[k][i]))
+				i++;
+			if (argv[j][i] > argv[k][i])
+				ft_swap(&argv[j], &argv[k]);
+			k++;
+		}
+		ft_putstr(argv[j]);
 		ft_putchar('\n');
+		j++;
 	}
-	return (0);
+	ft_putstr(argv[argc - 1]);
 }

@@ -6,8 +6,8 @@
 /*   By: root <mhinojos@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/29 14:07:34 by root              #+#    #+#             */
-/*   Updated: 2026/08/29 14:23:29 by root             ###   ########.fr       */
+/*   Updated: 2026/08/29 14:32:56 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define	ABS(value) ((value < 0) ? ((value) * -1) : (value))
+#define ABS(value) ((value < 0) ? ((value) * -1) : (value))
